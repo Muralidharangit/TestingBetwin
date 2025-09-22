@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betwin</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous">
+      
+<!-- Font Awesome (icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+      /* Blurred Background */
+.banner-bg {
+  position: absolute;
+  inset: 0;
+  background: url('./img/1.jpg') no-repeat center center/cover;
+  filter: blur(8px);
+  
+  z-index: 0;
+}
+
+/* Dark Overlay */
+.banner-section .overlay {
+  background: rgba(0, 0, 0, 0.618);
+  z-index: 1;
+}
+
+/* Ensure content is on top */
+.banner-section .container {
+  z-index: 2;
+  position: relative;
+}
+
+    </style>
+
+    
+
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <!-- cursor -->
+     <div class="cursor"></div>
+  <div class="cursor-dot"></div>
+
+    <!-- Header -->
+    <header class="position-absolute w-100">
+      <nav class="navbar glass-nav navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+          <!-- Logo (Left) -->
+          <a class="navbar-brand" href="./index.html" aria-label="Xcloud Home">
+            <img
+              src="./img/3log.png"
+              alt="Logo" loading="lazy" width="160" height="auto">
+          </a>
+
+          <!-- Toggle Button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menu + Button -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Center Menu -->
+           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" href="./index.html"
+                  aria-current="page">Home</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="./about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="./games.html">Games</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="./Blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="./Contact.html">Contact</a></li>
+            </ul>
+            <!-- Right Button -->
+            <button class="th-btn"><i
+                class="fas fa-arrow-right"></i><span>&nbsp; Call
+                Now!</span></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- About section -->
+    
+
+    
+
+    <!-- Banner -->
+      <!-- style="background: url('./img/bg.jpg') no-repeat center center/cover;" -->
+    
+<section class="banner-section text-white position-relative vh-100 d-flex align-items-center py-3">
+
+  <!-- Blurred Background -->
+  <div class="banner-bg"></div>
+
+  <!-- Dark Overlay -->
+  <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+       
+    <swiper-container class="mySwiper" pagination="false" class="h-100 w-100 overflow-visible">
+   
+
+     <swiper-slide class="h-100">
+  <div class="container-fluid  position-relative z-2 " style=" padding: 0 5vw;">
+    <div class="row align-items-center ">
+      
+
+     
+      <div class="col-md-7">
+        <p class="text-uppercase small text-white mb-2">
+          Your Ultimate Live Gaming World...
+        </p>
+        <h1 class="display-5 fw-bold mb-3">
+          GAMING ART & DEVELOPMENT  STUDIO PROVIDERS
+        </h1>
+        <p class="mb-4 col-lg-10 text-white">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur, incidunt debitis distinctio magnam dolor ea rem, nam, explicabo repudiandae quis voluptates expedita..
+        </p>
+        <p class="mb-4 col-lg-10 text-white">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur, incidunt debitis distinctio magnam dolor ea rem, nam, explicabo repudiandae quis voluptates expedita..
+        </p>
+        <div class="d-flex gap-3 flex-wrap">
+          <button class="th-btn">
+            <i class="fas fa-arrow-right"></i><span>&nbsp; View More!</span>
+          </button>
+          <button class="th-btn hover">
+            <i class="fas fa-arrow-right"></i><span>&nbsp; Contact!</span>
+          </button>
+        </div>
+      </div>
+
+     
+      <div class="col-md-5 text-center ">
+        <img src="https://www.firstcomicsnews.com/wp-content/uploads/2023/05/aviator-1.png" alt="Gaming Studio" class="w-100">
+
+
+      </div>
+
+    </div>
+  </div>
+    </swiper-slide>
+
+
+     <swiper-slide class="h-100">
+  <div class="container-fluid  position-relative z-2 " style=" padding: 0 5vw;">
+    <div class="row align-items-center ">
+      
+
+     
+      <div class="col-md-7">
+        <p class="text-uppercase small text-white mb-2">
+          Your Ultimate Live Gaming World...
+        </p>
+        <h1 class="display-5 fw-bold mb-3">
+          GAMING ART & DEVELOPMENT  STUDIO PROVIDERS
+        </h1>
+        <p class="mb-4 col-lg-10 text-white">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur, incidunt debitis distinctio magnam dolor ea rem, nam, explicabo repudiandae quis voluptates expedita..
+        </p>
+        <p class="mb-4 col-lg-10 text-white">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur, incidunt debitis distinctio magnam dolor ea rem, nam, explicabo repudiandae quis voluptates expedita..
+        </p>
+        <div class="d-flex gap-3 flex-wrap">
+          <button class="th-btn">
+            <i class="fas fa-arrow-right"></i><span>&nbsp; View More!</span>
+          </button>
+          <button class="th-btn hover">
+            <i class="fas fa-arrow-right"></i><span>&nbsp; Contact!</span>
+          </button>
+        </div>
+      </div>
+
+     
+      <div class="col-md-5 text-center ">
+     <img src="./img/222.png" alt="Gaming Studio" class="w-100">
+
+
+      </div>
+
+    </div>
+  </div>
+    </swiper-slide>
+
+
+    
+   
+  </swiper-container>
+
+
+</section>
+
+
+
+
+
+
+    <section class="container" >
+      <!-- title start -->
+      <div class="mb-5">
+        <!-- <div class="title-area text-center "><span class="sub-title style2">#
+            Welcome to The eSports &amp; Gaming Site</span><h2
+            class="sec-title text-white my-2">Forging Legends in the Gaming
+            Universe</h2></div> -->
+
+             <div class="mb-5 text-center">
+        <div class="title-area text-center "><span class="sub-title style2 m-0">#
+            Welcome to The eSports &amp; Gaming Site</span><h2
+            class="sec-title text-white my-0 text-center">Forging Legends in the Gaming
+            Universe</h2></div>
+      </div>
+      </div>
+
+      <!-- Main content -->
+
+      <div class="row align-items-center">
+        <!-- Left Column -->
+        <div class="col-md-6">
+          <!-- Add content here -->
+           <div class="d-flex justify-content-center">
+ <img src="./img/333.png" alt="" srcset="" class="w-90 shape-clip">
+           </div>
+          
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-md-6">
+          <!-- Card 1 -->
+          <!-- <div class="d-flex flex-column mb-4">
+            <div class="card-about d-flex align-items-center">
+              <div class="card-icon">
+                <img src="./img/2.png" alt="icon">
+              </div>
+              <div class="card-content">
+                <h4 class="card-title">Heading Text</h4>
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium, dolorum.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column mb-4">
+            <div class="card-about d-flex align-items-center">
+              <div class="card-icon">
+                <img src="./img/2.png" alt="icon">
+              </div>
+              <div class="card-content">
+                <h4 class="card-title">Heading Text</h4>
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium, dolorum.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column mb-4">
+            <div class="card-about d-flex align-items-center">
+              <div class="card-icon">
+                <img src="./img/2.png" alt="icon">
+              </div>
+              <div class="card-content">
+                <h4 class="card-title">Heading Text</h4>
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium, dolorum.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column mb-4">
+            <div class="card-about d-flex align-items-center">
+              <div class="card-icon">
+                <img src="./img/2.png" alt="icon">
+              </div>
+              <div class="card-content">
+                <h4 class="card-title">Heading Text</h4>
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium, dolorum.
+                </p>
+              </div>
+            </div>
+          </div> -->
+
+<div class="my-4">
+<swiper-container class="mySwiper two" direction="vertical" slides-per-view="3" space-between="0"
+  pagination="false" pagination-clickable="true" mousewheel="true" autoplay="true" loop="true">
+ <swiper-slide>
+        <div class="d-flex flex-column ">
+            <div class="card-about d-flex align-items-center">
+              <div class="card-icon">
+                <img src="./img/2.png" alt="icon">
+              </div>
+              <div class="card-content">
+                <h4 class="card-title">Heading Text</h4>
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium, dolorum.
+                </p>
+              </div>
+            </div>
+          </div>
+
+    </swiper-slide>
+
+     <swiper-slide>
+        <div class="d-flex flex-column ">
+            <div class="card-about d-flex align-items-center">
+              <div class="card-icon">
+                <img src="./img/2.png" alt="icon">
+              </div>
+              <div class="card-content">
+                <h4 class="card-title">Heading Text</h4>
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium, dolorum.
+                </p>
+              </div>
+            </div>
+          </div>
+
+    </swiper-slide>
+
+     <swiper-slide>
+        <div class="d-flex flex-column ">
+            <div class="card-about d-flex align-items-center">
+              <div class="card-icon">
+                <img src="./img/2.png" alt="icon">
+              </div>
+              <div class="card-content">
+                <h4 class="card-title">Heading Text</h4>
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium, dolorum.
+                </p>
+              </div>
+            </div>
+          </div>
+
+    </swiper-slide>
+
+     <swiper-slide>
+        <div class="d-flex flex-column">
+            <div class="card-about d-flex align-items-center">
+              <div class="card-icon">
+                <img src="./img/2.png" alt="icon">
+              </div>
+              <div class="card-content">
+                <h4 class="card-title">Heading Text</h4>
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium, dolorum.
+                </p>
+              </div>
+            </div>
+          </div>
+
+    </swiper-slide>
+
+     <swiper-slide>
+        <div class="d-flex flex-column ">
+            <div class="card-about d-flex align-items-center">
+              <div class="card-icon">
+                <img src="./img/2.png" alt="icon">
+              </div>
+              <div class="card-content">
+                <h4 class="card-title">Heading Text</h4>
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium, dolorum.
+                </p>
+              </div>
+            </div>
+          </div>
+
+    </swiper-slide>
+</swiper-container>
+</div>
+
+
+    
+        </div>
+      </div>
+
+    </section>
+
+    
+
+
+
+
+
+
+    <!-- blog card -->
+
+    <section class="container-fluid  bgred-line" > 
+       <div class="mb-5 text-center">
+        <div class="title-area text-center "><span class="sub-title style2 m-0">#
+            Action Games</span><h2
+            class="sec-title text-white my-0 text-center">Most Exiting Games</h2></div>
+      </div>
+   
+
+
+      <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+  <div class="gaming-card bg-dark position-relative overflow-hidden">
+    <!-- Image Section -->
+    <div class="gaming-image position-relative">
+      <img src="https://www.olabet.co.mz/content/mbg-m8g5tm/uploads/2024/08/Olabet_Aviator_Blog-Banner_27.05.24-1-1-1.jpg" alt="Game Image" class="w-100">
+
+      <!-- Arrow inside image -->
+      <span class="game-arrow">
+        <i class="fa-solid fa-arrow-right"></i>
+      </span>
+    </div>
+
+    <!-- Content Section -->
+    <div class="gaming-content p-3">
+      <ul class="gaming-date-list list-unstyled d-flex gap-3 mb-2 justify-content-between">
+        <li>
+          <i class="fa-solid fa-calendar-days"></i> 11 March 2025
+        </li>
+        <li>
+          <i class="fa-solid fa-comments"></i> 19 
+        </li>
+      </ul>
+      <h4>
+        <a href="#">Game microwave is too small to fit d.</a>
+      </h4>
+      <div class="d-flex justify-content-end">
+        <button class="th-btn Blog-btn">Read More!</button>
+      </div>
+    </div>
+  </div>
+          </div>
+         <div class="col-md-4">
+  <div class="gaming-card bg-dark position-relative overflow-hidden">
+    <!-- Image Section -->
+    <div class="gaming-image position-relative">
+      <img src="https://img.freepik.com/free-vector/bingo-lottery-winner-poster-realistic-style-with-balls-coins-sparkling-blue-background-vector-illustration_1284-83632.jpg?semt=ais_incoming&w=740&q=80" alt="Game Image" class="w-100">
+
+      <!-- Arrow inside image -->
+      <span class="game-arrow">
+        <i class="fa-solid fa-arrow-right"></i>
+      </span>
+    </div>
+
+    <!-- Content Section -->
+    <div class="gaming-content p-3">
+      <ul class="gaming-date-list list-unstyled d-flex gap-3 mb-2">
+        <li>
+          <i class="fa-solid fa-calendar-days"></i> 11 March 2025
+        </li>
+        <li>
+          <i class="fa-solid fa-comments"></i> 19 Comments
+        </li>
+      </ul>
+      <h4>
+        <a href="#">Game microwave is too small to fit d.</a>
+      </h4>
+      <div class="d-flex justify-content-end">
+        <button class="th-btn Blog-btn">Read More!</button>
+      </div>
+    </div>
+  </div>
+          </div>
+         <div class="col-md-4">
+  <div class="gaming-card bg-dark position-relative overflow-hidden">
+    <!-- Image Section -->
+    <div class="gaming-image position-relative">
+      <img src="https://static.vecteezy.com/system/resources/previews/008/557/061/non_2x/online-casino-banner-with-smartphone-casino-slot-machine-roulette-playing-cards-poker-chips-and-casino-wheel-fortune-on-gold-background-with-bokeh-3d-realistic-illustration-vector.jpg" alt="Game Image" class="w-100">
+
+      <!-- Arrow inside image -->
+      <span class="game-arrow">
+        <i class="fa-solid fa-arrow-right"></i>
+      </span>
+    </div>
+
+    <!-- Content Section -->
+    <div class="gaming-content p-3">
+      <ul class="gaming-date-list list-unstyled d-flex gap-3 mb-2">
+        <li>
+          <i class="fa-solid fa-calendar-days"></i> 11 March 2025
+        </li>
+        <li>
+          <i class="fa-solid fa-comments"></i> 19 Comments
+        </li>
+      </ul>
+      <h4>
+        <a href="#">Game microwave is too small to fit d.</a>
+      </h4>
+      <div class="d-flex justify-content-end">
+        <button class="th-btn Blog-btn">Read More!</button>
+      </div>
+    </div>
+  </div>
+          </div>
+      </div>
+      </div>
+
+
+    </section>
+
+
+    <!-- youtube vedios blink -->
+
+   <section class="container-fluid py-2">
+  <div class="video-box">
+    <div class="play-btn"></div>
+  </div>
+   </section>
+
+
+
+    <!-- Counter part -->
+   
+    <section class="container-fluid py-5 bg-second">
+      <!-- title start -->
+     
+
+      <!-- Main content -->
+
+      <div class="container">
+ <div class="row align-items-start">
+        <!-- Left Column -->
+        <div class="col-md-6">
+          <!-- Add content here -->
+           <div class="d-flex justify-content-center">
+ <img src="./img/ab.svg" alt="" srcset="" class="w-90 shape-clip">
+           </div>
+          
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-md-6">
+          <!-- Card 1 -->
+    
+<div class="my-1">
+ <div class="mb-2">
+        <div class="title-area text-left"><span class="sub-title style2 mb-2">#
+            Welcome to The </span><h2
+            class="sec-title text-white"> the Gaming
+            Universe</h2></div>
+      </div>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo excepturi ullam non beatae ab. </p>
+</div>
+<div class="container">
+<!-- Your HTML -->
+<div class="row g-4 counter-card-wrap">
+  <div class="col-md-6">
+    <div class="counter-card text-left">
+      <div class="media-body">
+        <h2 class="box-number">
+          <span class="counter-number" data-target="1600">0</span>K<span class="text-theme fw-medium">+</span>
+        </h2>
+        <p class="box-text">Our Daily Game Users</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="counter-card text-left">
+      <div class="media-body">
+        <h2 class="box-number">
+          <span class="counter-number" data-target="25">0</span>M
+        </h2>
+        <p class="box-text">Game Downloads</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="counter-card text-left">
+      <div class="media-body">
+        <h2 class="box-number">
+          <span class="counter-number" data-target="200">0</span><span class="text-theme fw-medium">+</span>
+        </h2>
+        <p class="box-text">Game Launched</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="counter-card text-left">
+      <div class="media-body">
+        <h2 class="box-number">
+          <span class="counter-number" data-target="360">0</span>M<span class="text-theme fw-medium">+</span>
+        </h2>
+        <p class="box-text">Gaming Project Delivered</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+ <button class="th-btn"><i
+                class="fas fa-arrow-right"></i><span>&nbsp; Read More</span></button>
+
+
+
+    
+        </div>
+      </div>
+      </div>
+
+     
+
+    </section>
+
+  <!-- Footer start -->
+
+
+    <section class="container-fluid py-5 " > 
+       <div class="mb-5 text-center">
+        <div class="title-area text-center "><span class="sub-title style2 m-0">#
+            Our Clients</span><h2
+            class="sec-title text-white my-0 text-center">Most Wanted Clients</h2></div>
+      </div>
+   
+
+
+      <div class="container">
+
+      
+  <swiper-container 
+    class="logo-slider-container"
+    space-between="20"
+    loop="true"
+    autoplay="true"
+    autoplay-delay="2000"
+    speed="1000"
+    breakpoints='{
+      "320": { "slidesPerView": 2, "spaceBetween": 10 },
+      "480": { "slidesPerView": 3, "spaceBetween": 10 },
+      "640": { "slidesPerView": 4, "spaceBetween": 15 },
+      "768": { "slidesPerView": 5, "spaceBetween": 15 },
+      "992": { "slidesPerView": 7, "spaceBetween": 18 },
+      "1200": { "slidesPerView": 8, "spaceBetween": 20 }
+    }'
+  >
+    <!-- Logos -->
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png" alt="Logo 1"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png" alt="Logo 2"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png" alt="Logo 3"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png" alt="Logo 4"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png" alt="Logo 5"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png" alt="Logo 6"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png" alt="Logo 7"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png" alt="Logo 8"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png" alt="Logo 9"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png" alt="Logo 10"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png" alt="Logo 11"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png" alt="Logo 12"></swiper-slide>
+  </swiper-container>
+
+
+    <swiper-container 
+    class="logo-slider-container"
+    space-between="20"
+    loop="true"
+    autoplay="true"
+    autoplay='{"delay":2000, "reverseDirection":true, "disableOnInteraction":true}'
+
+    speed="1000"
+    breakpoints='{
+      "320": { "slidesPerView": 2, "spaceBetween": 10 },
+      "480": { "slidesPerView": 3, "spaceBetween": 10 },
+      "640": { "slidesPerView": 4, "spaceBetween": 15 },
+      "768": { "slidesPerView": 5, "spaceBetween": 15 },
+      "992": { "slidesPerView": 7, "spaceBetween": 18 },
+      "1200": { "slidesPerView": 8, "spaceBetween": 20 }
+    }'
+  >
+    <!-- Logos -->
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png" alt="Logo 1"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png" alt="Logo 2"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png" alt="Logo 3"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png" alt="Logo 4"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png" alt="Logo 5"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png" alt="Logo 6"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png" alt="Logo 7"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png" alt="Logo 8"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png" alt="Logo 9"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png" alt="Logo 10"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png" alt="Logo 11"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png" alt="Logo 12"></swiper-slide>
+  </swiper-container>
+
+
+      </div>
+
+
+    </section>
+
+
+  
+  <!-- ================= FOOTER ================= -->
+<footer class="bg-second text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Logo & Description -->
+      <div class="col-md-4">
+        <a href="#" class="d-inline-block mb-3">
+          <img src="./img/3log.png" alt="Gaming Logo" class="w-25">
+        </a>
+        <p class="mb-3 text-uppercase">
+          Level up your gaming experience with GameZone – discover, play, and connect with gamers worldwide.
+        </p>
+        <!-- Social Icons -->
+
+        
+        
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2">
+        <h5 class="mb-3  text-white ">   Links</h5>
+        <ul class="list-unstyled text-uppercase">
+          <li><a href="#" class="text-white-50 nav-link px-0">Home</a></li>
+          <li><a href="#" class="text-white-50 nav-link px-0">Games</a></li>
+          <li><a href="#" class="text-white-50 nav-link px-0">About</a></li>
+          <li><a href="#" class="text-white-50 nav-link px-0">Blog</a></li>
+          <li><a href="#" class="text-white-50 nav-link px-0">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="col-md-2">
+        <h5 class="mb-3  text-white ">  Support</h5>
+        <ul class="list-unstyled text-uppercase">
+          <li><a href="#" class="text-white-50 nav-link px-0">Help Center</a></li>
+          <li><a href="#" class="text-white-50 nav-link px-0">Terms</a></li>
+          <li><a href="#" class="text-white-50 nav-link px-0">Privacy</a></li>
+          <li><a href="#" class="text-white-50 nav-link px-0">Refunds</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-md-4">
+        <h5 class="mb-3  text-white ">  Stay Updated</h5>
+        <p class="mb-3 text-white-50 text-uppercase">Subscribe to get the latest gaming news and exclusive offers.</p>
+
+        <div class="d-flex gap-3 footicon">
+          <a href="#" class="text-white fs-5"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white fs-5"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white fs-5"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="text-white fs-5"><i class="fab fa-discord"></i></a>
+        </div>
+
+     
+      </div>
+
+      
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="text-center border-top border-secondary mt-4 pt-3 d-flex justify-content-between">
+      <div>
+ <p class="mb-0 text-white-50 text-uppercase">&copy; 2025 Murali THEME. All Rights Reserved.</p>
+      </div>
+     
+
+      <div>
+          <ul class="list-unstyled text-uppercase d-flex gap-2">
+          <li><a href="#" class="text-white-50 nav-link px-0">Help Center</a></li>|
+          <li><a href="#" class="text-white-50 nav-link px-0">Terms</a></li>|
+          <li><a href="#" class="text-white-50 nav-link px-0">Privacy</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="back-to-top" style="">
+        <a class="top" id="top" href="#top"><i class="fas fa-arrow-up"></i>
+ </a>
+    </div>
+
+
+  </body>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+<!-- jQuery CDN (Google Hosted) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+
+
+<!-- JS -->
+<script>
+  const counters = document.querySelectorAll('.counter-number');
+
+  const speed = 200; // The lower, the faster
+
+  const runCounter = (counter) => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText.replace(/[^0-9]/g, '');
+      const increment = target / speed;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCount, 20);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCount();
+  };
+
+  // Trigger when visible
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        runCounter(entry.target);
+        observer.unobserve(entry.target); // Run only once
+      }
+    });
+  }, { threshold: 0.5 }); // 50% visible
+
+  counters.forEach(counter => {
+    observer.observe(counter);
+  });
+</script>
+
+<script>
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop() > 50) {
+      $("header").addClass("fixed");
+    } else {
+      $("header").removeClass("fixed");
+    }
+  });
+</script>
+
+<script>
+    const cursor = document.querySelector(".cursor");
+    const dot = document.querySelector(".cursor-dot");
+
+    let mouseX = 0, mouseY = 0;
+    let cursorX = 0, cursorY = 0;
+    let dotX = 0, dotY = 0;
+
+    // Track mouse
+    document.addEventListener("mousemove", e => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    // Smooth animation
+    function animate() {
+      cursorX += (mouseX - cursorX) * 0.2;
+      cursorY += (mouseY - cursorY) * 0.2;
+
+      dotX += (mouseX - dotX) * 0.1;
+      dotY += (mouseY - dotY) * 0.1;
+
+      cursor.style.transform = `translate(${cursorX - cursor.offsetWidth/2}px, ${cursorY - cursor.offsetHeight/2}px)`;
+      dot.style.transform = `translate(${dotX - 4}px, ${dotY - 4}px)`;
+
+      requestAnimationFrame(animate);
+    }
+    animate();
+
+    // Add hover effect on headings
+    document.querySelectorAll("h1,h2,h3,h4,h5,h6").forEach(heading => {
+      heading.addEventListener("mouseenter", () => {
+        cursor.classList.add("big");
+      });
+      heading.addEventListener("mouseleave", () => {
+        cursor.classList.remove("big");
+      });
+    });
+  </script>
+
+
+
+
+
+  
+</html>

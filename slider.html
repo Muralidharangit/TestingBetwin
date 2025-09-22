@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popular Games Slider</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      background: #0b0e13;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+
+    section {
+      padding: 50px 0;
+    }
+
+    .sec-title {
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    .sub-title {
+      font-size: 16px;
+      color: #e50914;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    /* Swiper main container */
+    swiper-container.game {
+      width: 100%;
+      padding: 50px 0;
+      overflow: hidden;
+    }
+
+    /* Default slide */
+    swiper-slide {
+      transition: all 0.5s ease;
+      opacity: 0.5;
+      transform: scale(0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 550px; /* fixed slide height */
+    }
+
+    /* Left slide */
+    swiper-slide.swiper-slide-prev {
+      transform: scale(0.85);
+      width: 30% !important;
+      opacity: 0.7;
+    }
+
+    /* Active (center) slide */
+    swiper-slide.swiper-slide-active {
+      transform: scale(1.2);
+      width: 40% !important;
+      z-index: 2;
+      opacity: 1;
+    }
+
+    /* Right slide */
+    swiper-slide.swiper-slide-next {
+      transform: scale(0.85);
+      width: 30% !important;
+      opacity: 0.7;
+    }
+
+    /* Game card styling */
+    .game-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: transform 0.4s ease;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .game-card img {
+      height: 100%;
+      width: auto;
+      border-radius: 15px;
+      transition: transform 0.6s ease;
+      display: block;
+    }
+
+    /* Overlay gradient */
+    .game-card .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      border-radius: 15px;
+    }
+
+    /* Game info area */
+    .game-info {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      right: 15px;
+      text-align: left;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.4s ease;
+    }
+
+    .game-badge {
+      display: inline-block;
+      background: #e50914;
+      padding: 5px 12px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 20px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .game-desc {
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 8px;
+    }
+
+    .game-rating {
+      color: gold;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    .play-btn {
+      display: inline-block;
+      background: #e50914;
+      color: #fff;
+      padding: 6px 14px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .play-btn:hover {
+      background: #ff3030;
+    }
+
+    /* Arrow button */
+    .game-arrow {
+      position: absolute;
+      top: 15px;
+      right: -50px;
+      background: #fff;
+      color: #000;
+      border-radius: 50%;
+      padding: 10px;
+      font-size: 16px;
+      transition: all 0.4s ease;
+      opacity: 0;
+    }
+    .game-arrow i {
+      transition: transform 0.3s ease;
+    }
+    .game-arrow:hover i {
+      transform: translateX(4px);
+    }
+
+    /* Hover Effects */
+    .game-card:hover img {
+      transform: scale(1.1);
+    }
+    .game-card:hover .overlay {
+      opacity: 1;
+    }
+    .game-card:hover .game-info {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .game-card:hover .game-arrow {
+      right: 15px;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="container-fluid py-5">
+    <div class="mb-5 text-center">
+      <div class="title-area text-center">
+        <span class="sub-title style2 m-0"># Action Games</span>
+        <h2 class="sec-title text-white my-0 text-center">Most Popular Games</h2>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <swiper-container class="mySwiper game" pagination="true" pagination-clickable="true" space-between="10"
+        slides-per-view="3" centered-slides="true">
+        
+        <swiper-slide>
+          <div class="game-card">
+            <img src="./img/G.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="game-info">
+              <span class="game-badge">Call of Duty</span>
+              <div class="game-desc">Fast-paced shooting action game.</div>
+              <div class="game-rating">⭐⭐⭐⭐☆</div>
+              <a href="#" class="play-btn">Play Now</a>
+            </div>
+            <div class="game-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="game-card">
+            <img src="./img/G.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="game-info">
+              <span class="game-badge">PUBG</span>
+              <div class="game-desc">Survive the battleground with your squad.</div>
+              <div class="game-rating">⭐⭐⭐⭐⭐</div>
+              <a href="#" class="play-btn">Play Now</a>
+            </div>
+            <div class="game-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="game-card">
+            <img src="./img/G.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="game-info">
+              <span class="game-badge">Free Fire</span>
+              <div class="game-desc">Intense battle royale on mobile.</div>
+              <div class="game-rating">⭐⭐⭐⭐☆</div>
+              <a href="#" class="play-btn">Play Now</a>
+            </div>
+            <div class="game-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="game-card">
+            <img src="./img/G.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="game-info">
+              <span class="game-badge">Fortnite</span>
+              <div class="game-desc">Creative building & battle royale fun.</div>
+              <div class="game-rating">⭐⭐⭐⭐⭐</div>
+              <a href="#" class="play-btn">Play Now</a>
+            </div>
+            <div class="game-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </swiper-slide>
+
+      </swiper-container>
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>

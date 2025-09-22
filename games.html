@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betwin</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous">
+
+    <!-- Font Awesome (icons) -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+
+     /* Swiper main container */
+swiper-container.game {
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+  height: 500px;
+}
+
+/* Default slide */
+swiper-container.game
+swiper-slide {
+  transition: all 0.5s ease;
+  opacity: 0.5;
+  transform: scale(0.8);
+  height: 100% !important;
+}
+
+/* Left slide */
+swiper-container.game
+swiper-slide.swiper-slide-prev {
+  transform: scale(0.85);
+  width: 30% !important;
+  opacity: 0.7;
+}
+
+
+/* Active (center) slide */
+swiper-container.game
+swiper-slide.swiper-slide-active {
+  transform: scale(1.2);
+  width: 40% !important;
+  z-index: 2;
+  opacity: 1;
+
+}
+
+/* Right slide */
+swiper-container.game
+swiper-slide.swiper-slide-next {
+  transform: scale(0.85);
+  width: 30% !important;
+  opacity: 0.7;
+}
+    </style>
+
+    <style>
+      swiper-container.game
+      .game-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  cursor: pointer;
+}
+swiper-container.game
+.game-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  border-radius: 14px;
+}
+swiper-container.game
+.game-card:hover img {
+  transform: scale(1.1) rotate(2deg);
+  filter: brightness(60%);
+}
+swiper-container.game
+.game-overlay {
+  position: absolute;
+  inset: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s ease;
+  border-radius: 14px;
+}
+swiper-container.game
+.game-card:hover .game-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+swiper-container.game
+/* Text styling */
+.game-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  animation: fadeUp 0.6s ease forwards;
+}
+swiper-container.game
+.game-category {
+  font-size: 14px;
+  opacity: 0.9;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* Animation for smooth text appearance */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🎨 20 different overlay color effects */
+.color1 .game-overlay { background: rgba(255,0,0,0.6); }
+
+    </style>
+
+   
+
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <header class="position-absolute w-100">
+      <nav class="navbar glass-nav navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+          <!-- Logo (Left) -->
+          <a class="navbar-brand" href="./index.html" aria-label="Xcloud Home">
+            <img
+              src="./img/logo.png"
+              alt="Logo" loading="lazy" width="160" height="auto">
+          </a>
+
+          <!-- Toggle Button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menu + Button -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Center Menu -->
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active"
+                  href="./index.html"
+                  aria-current="page">Home</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="./about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="./games.html">Games</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="./Blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="./Contact.html">Contact</a></li>
+            </ul>
+            <!-- Right Button -->
+            <button class="th-btn"><i
+                class="fas fa-arrow-right"></i><span>&nbsp; Call
+                Now!</span></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- About section -->
+
+    <section class="breadcrumb-area"
+      style="background-image: url(./img/br1.svg);">
+      <div class="container">
+        <div class="breadcrumb__wrapper text-center">
+          <h2 class="title">Game Pages</h2>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Game
+                Page</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+
+  
+
+
+     <section class="container-fluid py-5 bg-first">
+      <div class="mb-5 text-center">
+        <div class="title-area text-center "><span
+            class="sub-title style2 m-0">#
+            Action Games</span><h2
+            class="sec-title text-white my-0 text-center">Most Popular
+            Games</h2></div>
+      </div>
+
+      <div class="container-fluid">
+
+
+
+<swiper-container class="mySwiper game" pagination="true" pagination-clickable="true" space-between="10"
+    slides-per-view="3" centered-slides="true">
+    <swiper-slide>
+        <div class="game-card color1">
+            <img src="./img/G.jpg" alt="Game">
+            <div class="game-overlay">
+                <h3 class="game-title">Action Hero</h3>
+                <p class="game-category">Category: Action</p>
+            </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide>
+        <div class="game-card color1">
+            <img src="./img/G.jpg" alt="Game">
+            <div class="game-overlay">
+                <h3 class="game-title">Racing X</h3>
+                <p class="game-category">Category: Racing</p>
+            </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide>
+        <div class="game-card color1">
+            <img src="./img/G.jpg" alt="Game">
+            <div class="game-overlay">
+                <h3 class="game-title">Battle Zone</h3>
+                <p class="game-category">Category: Battle</p>
+            </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide>
+        <div class="game-card color1">
+            <img src="./img/G.jpg" alt="Game">
+            <div class="game-overlay">
+                <h3 class="game-title">Puzzle Mania</h3>
+                <p class="game-category">Category: Puzzle</p>
+            </div>
+        </div>
+    </swiper-slide>
+</swiper-container>
+
+
+
+      </div>
+
+    </section>
+
+
+    <section class="container-fluid py-5 bg-second ">
+      <div class="mb-5 text-center">
+        <div class="title-area text-center "><span
+            class="sub-title style2 m-0">#
+            Action Games</span><h2
+            class="sec-title text-white my-0 text-center">Most Popular
+            Games</h2></div>
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-4">
+            <div
+              class="game-card bg-dark text-white rounded-3 shadow-lg overflow-hidden position-relative">
+
+              <!-- Game Image -->
+              <div class="game-image position-relative">
+                <img src="./img/ab.svg" alt="Game Image" class="w-100">
+
+                <!-- Rating Badge -->
+                <span
+                  class="rating-badge position-absolute top-0 end-0 m-2 bg-warning text-dark fw-bold px-2 py-1 rounded">
+                  ★ 4.5
+                </span>
+              </div>
+
+              <!-- Game Content -->
+              <div class="p-3">
+                <!-- Game Title -->
+                <h5 class="mb-1 fw-bold">
+                  <a href="#" class="text-white text-decoration-none">Game
+                    -Aviator</a>
+                </h5>
+
+                <!-- Genre Tags -->
+
+                <!-- Rating Stars -->
+                <div class="mb-2 text-warning">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <small class="text-secondary ms-2">(120 Reviews)</small>
+                </div>
+
+                <!-- Short Description -->
+
+                <!-- Footer Actions -->
+                <div
+                  class="d-flex justify-content-center align-items-center mt-3">
+                  
+                  <button class="th-btn Blog-btn">Play Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div
+              class="game-card bg-dark text-white rounded-3 shadow-lg overflow-hidden position-relative">
+
+              <!-- Game Image -->
+              <div class="game-image position-relative">
+                <img src="./img/ab.svg" alt="Game Image" class="w-100">
+
+                <!-- Rating Badge -->
+                <span
+                  class="rating-badge position-absolute top-0 end-0 m-2 bg-warning text-dark fw-bold px-2 py-1 rounded">
+                  ★ 4.5
+                </span>
+              </div>
+
+              <!-- Game Content -->
+              <div class="p-3">
+                <!-- Game Title -->
+                <h5 class="mb-1 fw-bold">
+                  <a href="#" class="text-white text-decoration-none">Game
+                    -Aviator</a>
+                </h5>
+
+                <!-- Genre Tags -->
+
+                <!-- Rating Stars -->
+                <div class="mb-2 text-warning">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <small class="text-secondary ms-2">(120 Reviews)</small>
+                </div>
+
+                <!-- Short Description -->
+
+                <!-- Footer Actions -->
+                <div
+                  class="d-flex justify-content-center align-items-center mt-3">
+
+                  <button class="th-btn Blog-btn">Play Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div
+              class="game-card bg-dark text-white rounded-3 shadow-lg overflow-hidden position-relative">
+
+              <!-- Game Image -->
+              <div class="game-image position-relative">
+                <img src="./img/ab.svg" alt="Game Image" class="w-100">
+
+                <!-- Rating Badge -->
+                <span
+                  class="rating-badge position-absolute top-0 end-0 m-2 bg-warning text-dark fw-bold px-2 py-1 rounded">
+                  ★ 4.5
+                </span>
+              </div>
+
+              <!-- Game Content -->
+              <div class="p-3">
+                <!-- Game Title -->
+                <h5 class="mb-1 fw-bold">
+                  <a href="#" class="text-white text-decoration-none">Game
+                    -Aviator</a>
+                </h5>
+
+                <!-- Genre Tags -->
+
+                <!-- Rating Stars -->
+                <div class="mb-2 text-warning">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <small class="text-secondary ms-2">(120 Reviews)</small>
+                </div>
+
+                <!-- Short Description -->
+
+                <!-- Footer Actions -->
+                <div
+                  class="d-flex justify-content-center align-items-center mt-3">
+
+                  <button class="th-btn Blog-btn">Play Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="container-fluid py-5 ">
+      <div class="mb-5 text-center">
+        <div class="title-area text-center "><span
+            class="sub-title style2 m-0">#
+            Our Clients</span><h2
+            class="sec-title text-white my-0 text-center">Most Wanted
+            Clients</h2></div>
+      </div>
+
+      <div class="container">
+
+        <swiper-container
+          class="logo-slider-container"
+          space-between="20"
+          loop="true"
+          autoplay="true"
+          autoplay-delay="2000"
+          speed="1000"
+          breakpoints='{
+      "320": { "slidesPerView": 2, "spaceBetween": 10 },
+      "480": { "slidesPerView": 3, "spaceBetween": 10 },
+      "640": { "slidesPerView": 4, "spaceBetween": 15 },
+      "768": { "slidesPerView": 5, "spaceBetween": 15 },
+      "992": { "slidesPerView": 7, "spaceBetween": 18 },
+      "1200": { "slidesPerView": 8, "spaceBetween": 20 }
+    }'>
+          <!-- Logos -->
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png"
+              alt="Logo 1"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png"
+              alt="Logo 2"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png"
+              alt="Logo 3"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png"
+              alt="Logo 4"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png"
+              alt="Logo 5"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png"
+              alt="Logo 6"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png"
+              alt="Logo 7"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png"
+              alt="Logo 8"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png"
+              alt="Logo 9"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png"
+              alt="Logo 10"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png"
+              alt="Logo 11"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png"
+              alt="Logo 12"></swiper-slide>
+        </swiper-container>
+
+        <swiper-container
+          class="logo-slider-container"
+          space-between="20"
+          loop="true"
+          autoplay="true"
+          autoplay='{"delay":2000, "reverseDirection":true, "disableOnInteraction":true}'
+          speed="1000"
+          breakpoints='{
+      "320": { "slidesPerView": 2, "spaceBetween": 10 },
+      "480": { "slidesPerView": 3, "spaceBetween": 10 },
+      "640": { "slidesPerView": 4, "spaceBetween": 15 },
+      "768": { "slidesPerView": 5, "spaceBetween": 15 },
+      "992": { "slidesPerView": 7, "spaceBetween": 18 },
+      "1200": { "slidesPerView": 8, "spaceBetween": 20 }
+    }'>
+          <!-- Logos -->
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png"
+              alt="Logo 1"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png"
+              alt="Logo 2"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png"
+              alt="Logo 3"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png"
+              alt="Logo 4"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png"
+              alt="Logo 5"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png"
+              alt="Logo 6"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png"
+              alt="Logo 7"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png"
+              alt="Logo 8"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png"
+              alt="Logo 9"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png"
+              alt="Logo 10"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png"
+              alt="Logo 11"></swiper-slide>
+          <swiper-slide class="logo-slider-slide"><img
+              src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png"
+              alt="Logo 12"></swiper-slide>
+        </swiper-container>
+
+      </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-second text-white pt-5 pb-3">
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- Logo & Description -->
+          <div class="col-md-4">
+            <a href="#" class="d-inline-block mb-3">
+              <img src="./img/logo.png" alt="Gaming Logo" class="img-fluid">
+            </a>
+            <p class="mb-3 text-uppercase">
+              Level up your gaming experience with GameZone – discover, play,
+              and connect with gamers worldwide.
+            </p>
+            <!-- Social Icons -->
+
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-2">
+            <h5 class="mb-3  text-white "> Links</h5>
+            <ul class="list-unstyled text-uppercase">
+              <li><a href="#" class="text-white-50 nav-link px-0">Home</a></li>
+              <li><a href="#" class="text-white-50 nav-link px-0">Games</a></li>
+              <li><a href="#" class="text-white-50 nav-link px-0">About</a></li>
+              <li><a href="#" class="text-white-50 nav-link px-0">Blog</a></li>
+              <li><a href="#"
+                  class="text-white-50 nav-link px-0">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Support -->
+          <div class="col-md-2">
+            <h5 class="mb-3  text-white "> Support</h5>
+            <ul class="list-unstyled text-uppercase">
+              <li><a href="#" class="text-white-50 nav-link px-0">Help
+                  Center</a></li>
+              <li><a href="#" class="text-white-50 nav-link px-0">Terms</a></li>
+              <li><a href="#"
+                  class="text-white-50 nav-link px-0">Privacy</a></li>
+              <li><a href="#"
+                  class="text-white-50 nav-link px-0">Refunds</a></li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-md-4">
+            <h5 class="mb-3  text-white "> Stay Updated</h5>
+            <p class="mb-3 text-white-50 text-uppercase">Subscribe to get the
+              latest gaming news and exclusive offers.</p>
+
+            <div class="d-flex gap-3 footicon">
+              <a href="#" class="text-white fs-5"><i
+                  class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white fs-5"><i
+                  class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white fs-5"><i
+                  class="fab fa-youtube"></i></a>
+              <a href="#" class="text-white fs-5"><i
+                  class="fab fa-discord"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Bottom -->
+        <div
+          class="text-center border-top border-secondary mt-4 pt-3 d-flex justify-content-between">
+          <div>
+            <p class="mb-0 text-white-50 text-uppercase">&copy; 2025 Murali
+              THEME. All Rights Reserved.</p>
+          </div>
+
+          <div>
+            <ul class="list-unstyled text-uppercase d-flex gap-2">
+              <li><a href="#" class="text-white-50 nav-link px-0">Help
+                  Center</a></li>|
+              <li><a href="#"
+                  class="text-white-50 nav-link px-0">Terms</a></li>|
+              <li><a href="#"
+                  class="text-white-50 nav-link px-0">Privacy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="back-to-top" style>
+      <a class="top" id="top" href="#top"><i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+
+  </body>
+
+  <!-- jQuery CDN (Google Hosted) -->
+  <!-- Swiper JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+  <!-- jQuery CDN (Google Hosted) -->
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <script>
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop() > 50) {
+      $("header").addClass("fixed");
+    } else {
+      $("header").removeClass("fixed");
+    }
+  });
+</script>
