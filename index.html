@@ -40,6 +40,63 @@
 
     </style>
 
+    <style>
+      .pq-icon .w-10 {
+    width: 80px !important;
+    margin: auto;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+      .pq-image-box.pq-style-5 {
+    /* padding: 45px 30px; */
+    padding: 30px 20px;
+    border: 1px solid #ffffff33;
+    transition: 0.5s ease-in-out;
+}
+.pq-image-box.pq-style-5 .pq-image-box-img {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.pq-image-box.pq-style-5 .pq-image-box-img img {
+    height: 86px;
+}
+.pq-image-box.pq-style-5 .pq-image-box-content .pq-image-box-title {
+    margin-bottom: 5px;
+}
+.pq-image-box.pq-style-5 .pq-image-box-content .pq-button.pq-button-flat {
+    margin-top: 20px;
+}
+
+ .pq-image-box .pq-icon .white-icon {
+        display: block;
+    }
+    .pq-image-box:hover .pq-icon .white-icon {
+        display: none;
+    }
+    .pq-image-box .pq-icon .red-icon {
+        display: none;
+    }
+    .pq-image-box:hover .pq-icon .red-icon {
+        display: block;
+    }
+
+     /* Hover state for the card */
+    .pq-image-box:hover {
+        transform: scale(1.01); /* Make the card 5% larger */
+    }
+
+    /* Hover state for the images */
+    .pq-image-box:hover .pq-icon .white-icon {
+        opacity: 0; /* Fade out the white icon */
+    }
+    .pq-image-box:hover .pq-icon .red-icon {
+        opacity: 1; /* Fade in the red icon */
+    }
+    </style>
+
     
 
   </head>
@@ -112,7 +169,45 @@
 
        
     <swiper-container class="mySwiper" pagination="false" class="h-100 w-100 overflow-visible">
-   
+       <swiper-slide class="h-100">
+  <div class="container-fluid  position-relative z-2 " style=" padding: 0 5vw;">
+    <div class="row align-items-center ">
+      
+
+     
+      <div class="col-md-7">
+        <p class="text-uppercase small text-white mb-2">
+          Your Ultimate Live Gaming World...
+        </p>
+        <h1 class="display-5 fw-bold mb-3">
+          GAMING ART & DEVELOPMENT  STUDIO PROVIDERS
+        </h1>
+        <p class="mb-4 col-lg-10 text-white">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur, incidunt debitis distinctio magnam dolor ea rem, nam, explicabo repudiandae quis voluptates expedita..
+        </p>
+        <p class="mb-4 col-lg-10 text-white">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur, incidunt debitis distinctio magnam dolor ea rem, nam, explicabo repudiandae quis voluptates expedita..
+        </p>
+        <div class="d-flex gap-3 flex-wrap">
+          <button class="th-btn">
+            <i class="fas fa-arrow-right"></i><span>&nbsp; View More!</span>
+          </button>
+          <button class="th-btn hover">
+            <i class="fas fa-arrow-right"></i><span>&nbsp; Contact!</span>
+          </button>
+        </div>
+      </div>
+
+     
+      <div class="col-md-5 text-center ">
+     <img src="./img/222.png" alt="Gaming Studio" class="w-100">
+
+
+      </div>
+
+    </div>
+  </div>
+    </swiper-slide>
 
      <swiper-slide class="h-100">
   <div class="container-fluid  position-relative z-2 " style=" padding: 0 5vw;">
@@ -155,45 +250,7 @@
     </swiper-slide>
 
 
-     <swiper-slide class="h-100">
-  <div class="container-fluid  position-relative z-2 " style=" padding: 0 5vw;">
-    <div class="row align-items-center ">
-      
-
-     
-      <div class="col-md-7">
-        <p class="text-uppercase small text-white mb-2">
-          Your Ultimate Live Gaming World...
-        </p>
-        <h1 class="display-5 fw-bold mb-3">
-          GAMING ART & DEVELOPMENT  STUDIO PROVIDERS
-        </h1>
-        <p class="mb-4 col-lg-10 text-white">
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur, incidunt debitis distinctio magnam dolor ea rem, nam, explicabo repudiandae quis voluptates expedita..
-        </p>
-        <p class="mb-4 col-lg-10 text-white">
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur, incidunt debitis distinctio magnam dolor ea rem, nam, explicabo repudiandae quis voluptates expedita..
-        </p>
-        <div class="d-flex gap-3 flex-wrap">
-          <button class="th-btn">
-            <i class="fas fa-arrow-right"></i><span>&nbsp; View More!</span>
-          </button>
-          <button class="th-btn hover">
-            <i class="fas fa-arrow-right"></i><span>&nbsp; Contact!</span>
-          </button>
-        </div>
-      </div>
-
-     
-      <div class="col-md-5 text-center ">
-     <img src="./img/222.png" alt="Gaming Studio" class="w-100">
-
-
-      </div>
-
-    </div>
-  </div>
-    </swiper-slide>
+   
 
 
     
@@ -202,6 +259,14 @@
 
 
 </section>
+
+
+
+
+
+
+
+
 
 
 
@@ -231,7 +296,7 @@
         <div class="col-md-6">
           <!-- Add content here -->
            <div class="d-flex justify-content-center">
- <img src="./img/333.png" alt="" srcset="" class="w-90 shape-clip">
+ <img src="./img/444444.png" alt="" srcset="" class="w-90 shape-clip">
            </div>
           
         </div>
@@ -401,10 +466,193 @@
 
     </section>
 
+
+    
+      <section class="container-fluid py-5 bg-second" > 
+       <div class="mb-5 text-center">
+        <div class="title-area text-center "><span class="sub-title style2 m-0">#
+            Our work</span><h2
+            class="sec-title text-white my-0 text-center">Our Services</h2></div>
+      </div>
+   
+
+
+      <div class="container">
+
+      <div class="row">
+        <div class="col-xl-4 col-lg-6 col-md-6">
+                   <div class="pq-image-box pq-style-5 rounded-2">
+        <div class="pq-icon">
+            <img src="./img/crown (3).png" alt="Aviator API cost in Lesotho" class="w-10 white-icon">
+
+            <img src="./img/i (1).png" alt="Aviator API cost in Lesotho" class="w-10 red-icon">
+        </div>
+                        <div class="pq-image-box-content">
+                            <h6 class="pq-image-box-title"> Aviator Game Integration</h6>
+                            <p class="pq-image-box-description">Our API integration allows for connectivity of Aviator
+                                games into your existing platform. As a leading Aviator Game Provider, we ensure that
+                                your players have immediate access to the full range of Aviator game features and
+                                functionalities.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="col-xl-4 col-lg-6 col-md-6">
+                   <div class="pq-image-box pq-style-5 rounded-2">
+        <div class="pq-icon">
+            <img src="./img/crown (3).png" alt="Aviator API cost in Lesotho" class="w-10 white-icon">
+
+            <img src="./img/i (1).png" alt="Aviator API cost in Lesotho" class="w-10 red-icon">
+        </div>
+                        <div class="pq-image-box-content">
+                            <h6 class="pq-image-box-title"> Aviator Game Integration</h6>
+                            <p class="pq-image-box-description">Our API integration allows for connectivity of Aviator
+                                games into your existing platform. As a leading Aviator Game Provider, we ensure that
+                                your players have immediate access to the full range of Aviator game features and
+                                functionalities.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="col-xl-4 col-lg-6 col-md-6">
+                   <div class="pq-image-box pq-style-5 rounded-2">
+        <div class="pq-icon">
+            <img src="./img/crown (3).png" alt="Aviator API cost in Lesotho" class="w-10 white-icon">
+
+            <img src="./img/i (1).png" alt="Aviator API cost in Lesotho" class="w-10 red-icon">
+        </div>
+                        <div class="pq-image-box-content">
+                            <h6 class="pq-image-box-title"> Aviator Game Integration</h6>
+                            <p class="pq-image-box-description">Our API integration allows for connectivity of Aviator
+                                games into your existing platform. As a leading Aviator Game Provider, we ensure that
+                                your players have immediate access to the full range of Aviator game features and
+                                functionalities.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+      </div> 
+  
+
+      </div>
+
+      <div>
+         <div class="d-flex justify-content-center my-5">
+        <button class="th-btn Blog-btn">More Service!</button>
+      </div>
+      </div>
+
+
+    </section>
     
 
 
+    <!-- Counter part -->
+   
+    <section class="container-fluid py-5 bg-first">
+   
+     
 
+      <!-- Main content -->
+
+      <div class="container">
+ <div class="row align-items-start">
+
+           <!-- Right Column -->
+        <div class="col-md-6">
+          <!-- Card 1 -->
+    
+<div class="my-1">
+ <div class="mb-2">
+        <div class="title-area text-left"><span class="sub-title style2 mb-2">#
+            Welcome to The </span><h2
+            class="sec-title text-white"> the Gaming
+            Universe</h2></div>
+      </div>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo excepturi ullam non beatae ab. </p>
+</div>
+<div class="container">
+<!-- Your HTML -->
+<div class="row g-4 counter-card-wrap align-items-center">
+  <div class="col-md-6">
+    <div class="counter-card text-left">
+      <div class="media-body">
+        <h2 class="box-number">
+          <span class="counter-number" data-target="1600">0</span>K<span class="text-theme fw-medium">+</span>
+        </h2>
+        <p class="box-text">Our Daily Game Users</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="counter-card text-left">
+      <div class="media-body">
+        <h2 class="box-number">
+          <span class="counter-number" data-target="25">0</span>M
+        </h2>
+        <p class="box-text">Game Downloads</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="counter-card text-left">
+      <div class="media-body">
+        <h2 class="box-number">
+          <span class="counter-number" data-target="200">0</span><span class="text-theme fw-medium">+</span>
+        </h2>
+        <p class="box-text">Game Launched</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="counter-card text-left">
+      <div class="media-body">
+        <h2 class="box-number">
+          <span class="counter-number" data-target="360">0</span>M<span class="text-theme fw-medium">+</span>
+        </h2>
+        <p class="box-text">Gaming Project Delivered</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+ <button class="th-btn"><i
+                class="fas fa-arrow-right"></i><span>&nbsp; Read More</span></button>
+
+
+
+    
+        </div>
+        <!-- Left Column -->
+        <div class="col-md-6">
+          <!-- Add content here -->
+           <div class="d-flex justify-content-center">
+ <img src="./img/a2.png" alt="" srcset="" class="w-90 shape-clip">
+           </div>
+          
+        </div>
+
+     
+      </div>
+      </div>
+
+     
+
+    </section>
+
+  <!-- Footer start -->
 
 
 
@@ -532,103 +780,9 @@
 
 
 
-    <!-- Counter part -->
-   
-    <section class="container-fluid py-5 bg-second">
-      <!-- title start -->
-     
-
-      <!-- Main content -->
-
-      <div class="container">
- <div class="row align-items-start">
-        <!-- Left Column -->
-        <div class="col-md-6">
-          <!-- Add content here -->
-           <div class="d-flex justify-content-center">
- <img src="./img/ab.svg" alt="" srcset="" class="w-90 shape-clip">
-           </div>
-          
-        </div>
-
-        <!-- Right Column -->
-        <div class="col-md-6">
-          <!-- Card 1 -->
-    
-<div class="my-1">
- <div class="mb-2">
-        <div class="title-area text-left"><span class="sub-title style2 mb-2">#
-            Welcome to The </span><h2
-            class="sec-title text-white"> the Gaming
-            Universe</h2></div>
-      </div>
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo excepturi ullam non beatae ab. </p>
-</div>
-<div class="container">
-<!-- Your HTML -->
-<div class="row g-4 counter-card-wrap">
-  <div class="col-md-6">
-    <div class="counter-card text-left">
-      <div class="media-body">
-        <h2 class="box-number">
-          <span class="counter-number" data-target="1600">0</span>K<span class="text-theme fw-medium">+</span>
-        </h2>
-        <p class="box-text">Our Daily Game Users</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-6">
-    <div class="counter-card text-left">
-      <div class="media-body">
-        <h2 class="box-number">
-          <span class="counter-number" data-target="25">0</span>M
-        </h2>
-        <p class="box-text">Game Downloads</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-6">
-    <div class="counter-card text-left">
-      <div class="media-body">
-        <h2 class="box-number">
-          <span class="counter-number" data-target="200">0</span><span class="text-theme fw-medium">+</span>
-        </h2>
-        <p class="box-text">Game Launched</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-6">
-    <div class="counter-card text-left">
-      <div class="media-body">
-        <h2 class="box-number">
-          <span class="counter-number" data-target="360">0</span>M<span class="text-theme fw-medium">+</span>
-        </h2>
-        <p class="box-text">Gaming Project Delivered</p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
- <button class="th-btn"><i
-                class="fas fa-arrow-right"></i><span>&nbsp; Read More</span></button>
 
 
 
-    
-        </div>
-      </div>
-      </div>
-
-     
-
-    </section>
-
-  <!-- Footer start -->
 
 
     <section class="container-fluid py-5 " > 
@@ -660,7 +814,7 @@
     }'
   >
     <!-- Logos -->
-    <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png" alt="Logo 1"></swiper-slide>
+    <swiper-slide class="logo-slider-slide"><img src="./img/L1.png" alt="Logo 1" ></swiper-slide>
     <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png" alt="Logo 2"></swiper-slide>
     <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand07.png" alt="Logo 3"></swiper-slide>
     <swiper-slide class="logo-slider-slide"><img src="https://themedox.com/mykd/wp-content/uploads/2023/10/brand05.png" alt="Logo 4"></swiper-slide>

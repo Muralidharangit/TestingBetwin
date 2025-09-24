@@ -291,7 +291,7 @@ swiper-slide {
   box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 
   /* Background image with fixed attachment */
-  background: url('../img/G.jpg') no-repeat center center/cover;
+  background: url('../img/1.jpg') no-repeat center center/cover;
   background-attachment: fixed;
 }
 
